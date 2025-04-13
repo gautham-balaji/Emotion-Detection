@@ -32,7 +32,7 @@ The model is trained to recognize the following facial expressions:
 | Model Format     | `.h5` (Keras saved model)  |
 
 ## 📂 Folder Structure
-
+```
 OPEN_CV/
 │
 ├── .venv/                          # Virtual environment
@@ -58,7 +58,7 @@ OPEN_CV/
 ├── requirements.txt               # Dependencies
 ├── .gitignore
 ├── .gitattributes
-
+```
 
 ## 🧪 How It Works
 
