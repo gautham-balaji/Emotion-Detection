@@ -1,0 +1,24 @@
+# Ignore virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings (optional)
+.vscode/
+
+# Mac system files (if you're on macOS sometimes)
+.DS_Store
+
+# Environment & secret files
+.env
+*.env
+
+# OS junk files
+Thumbs.db
+ehthumbs.db
