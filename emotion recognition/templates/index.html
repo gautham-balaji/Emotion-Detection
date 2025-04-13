@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Detection</title>
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00ffd5;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            border: 4px solid #00ffd5;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 640px;
+            height: 480px;
+            background-color: #222;
+            box-shadow: 0 0 30px #00ffd5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder {
+            color: #aaa;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎥 Emotion Detection</h1>
+    <div class="video-container">
+        <img id="video-feed" src="/static/placeholder.png" alt="Press Enter to start feed">
+    </div>
+    <p class="placeholder">Press <strong>Enter</strong> to start. Press <strong>Esc</strong> to stop.</p>
+    <footer>Emotion Detection using AI</footer>
+
+    <script>
+        const feed = document.getElementById('video-feed');
+        let streaming = false;
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' && !streaming) {
+                feed.src = '/video';
+                streaming = true;
+            } else if (event.key === 'Escape' && streaming) {
+                feed.src = '/static/placeholder.png';
+                streaming = false;
+            }
+        });
+    </script>
+</body>
+</html>
