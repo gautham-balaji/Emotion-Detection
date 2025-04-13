@@ -1,6 +1,9 @@
 # Ignore virtual environment
 venv/
 
+#ignore myenv
+myenv/
+
 # Python cache files
 __pycache__/
 *.py[cod]
