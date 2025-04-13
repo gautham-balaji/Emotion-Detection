@@ -78,11 +78,13 @@ pip install -r requirements.txt
 ```
 
 ▶️ Run the Project
+
 🖥️ For Real-Time Detection via Python Script:
 bash
 Copy
 Edit
 python real_time_detection.py
+
 🌐 For Web Interface:
 bash
 Copy
