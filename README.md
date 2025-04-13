@@ -81,15 +81,10 @@ pip install -r requirements.txt
 
 🖥️ For Real-Time Detection via Python Script:
 ```bash
-Copy
-Edit
-```
 python real_time_detection.py
-
+```
 🌐 For Web Interface:
 ```bash
-Copy
-Edit
 python app.py
 ```
 Open your browser at http://localhost:5000 to use the live emotion detector with webcam access.
