@@ -33,7 +33,7 @@ The model is trained to recognize the following facial expressions:
 
 ## 📂 Folder Structure
 ```
-OPEN_CV/
+PARENT_DIR/
 │
 ├── .venv/                          # Virtual environment
 ├── emotion recognition/
@@ -48,7 +48,6 @@ OPEN_CV/
 │   ├── haarcascade_frontalface_default.xml
 │   ├── haarcascade_smile.xml
 │   ├── load_data.py               # Data loading and preprocessing
-│   ├── madhav.jpg                 # Test image (optional)
 │   ├── preprocess.py              # Image preprocessing functions
 │   ├── real_time_detection.py     # Real-time webcam emotion detector
 │   ├── train_model.py             # CNN model architecture and training script
